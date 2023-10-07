@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "favourite_places",
+    "name": "Favourite Places",
     "slug": "favourite_places",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,6 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -18,10 +21,15 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.samuelraj.favourite_places"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,6 +41,11 @@
           "cameraPermission": "The app accesses your camera."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fb1ad4f3-39aa-4894-8933-258439c9ffa4"
+      }
+    }
   }
 }
