@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
       shadowColor:'black',
       shadowOpacity:0.15,
       shadowRadius:2,
-      shadowOffset:{width:1,h:1}
+      shadowOffset:{width:1,height:1}
      },
      info:{
       flex:2,
